@@ -24,4 +24,3 @@
     </p>
    </form>
     
-<?php include_once('lib/footer.php'); ?>
