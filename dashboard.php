@@ -7,7 +7,5 @@ if(!isset($_SESSION['loggedIn'])){
 ?>
 <h3>Dashboard</h3>
 
-Welcome, <?php echo $_SESSION['fullname'] ?>, You are logged in as (<?php echo 
-$_SESSION['role'] ?>), and your ID is <?php echo $_SESSION['loggedIn'] ?>.
+Welcome, <?php echo $_SESSION['fullname'] ?>, .
 
-<?php include_once('lib/footer.php'); ?>

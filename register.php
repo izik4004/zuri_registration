@@ -58,64 +58,7 @@ if(isset($_SESSION['loggedIn']) && !empty($_SESSION['loggedIn'])){
                 <label>Password</label><br />
                 <input type="password" class="form-control" name="password" placeholder="Password"  />
             </p>
-            <p>
-                <label>Gender</label><br />
-                <select class="form-control" name="gender" >
-                <?php              
-                    if(isset($_SESSION['department'])){
-                        echo "value=" . $_SESSION['department'];                                                             
-                    }                
-                ?>
-                    <option value="">Select One</option>
-                    <option 
-                    <?php              
-                        if(isset($_SESSION['gender']) && $_SESSION['gender'] == 'Female'){
-                            echo "selected";                                                           
-                        }                
-                    ?>
-                    >Female</option>
-                    <option 
-                    <?php              
-                        if(isset($_SESSION['gender']) && $_SESSION['gender'] == 'Male'){
-                            echo "selected";                                                           
-                        }                
-                    ?>
-                    >Male</option>
-                </select>
-            </p>
-        
-            <p>
-                <label>Designation</label><br />
-                <select class="form-control" name="designation" >
-                
-                    <option value="">Select One</option>
-                    <option 
-                    <?php              
-                        if(isset($_SESSION['designation']) && $_SESSION['designation'] == 'Medical Team (MT)'){
-                            echo "selected";                                                           
-                        }                
-                    ?>
-                    >Medical Team (MT)</option>
-                    <option 
-                    <?php              
-                        if(isset($_SESSION['designation']) && $_SESSION['designation'] == 'Patient'){
-                            echo "selected";                                                           
-                        }                
-                    ?>
-                    >Patient</option>
-                </select>
-            </p>
-            <p>
-                <label class="label" for="department">Department</label><br />
-                <input
-                <?php              
-                    if(isset($_SESSION['department'])){
-                        echo "value=" . $_SESSION['department'];                                                             
-                    }                
-                ?>
-                type="text" id="department" class="form-control" name="department" placeholder="Department"  />
-            
-            </p>
+           
             <p>
                 <button class="btn btn-sm btn-success" type="submit">Register</button>
             </p>

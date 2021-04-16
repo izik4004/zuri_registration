@@ -44,25 +44,17 @@ if($errorCount > 0){
                 $_SESSION['loggedIn'] = $userObject->id; 
                 $_SESSION['email'] = $userObject->email;
                 $_SESSION['fullname'] = $userObject->first_name . " " . $userObject->last_name;
-                $_SESSION['role'] = $userObject->designation;
                 
-                if($userObject->designation == 'Patient'){
-                    header("Location: patient.php");
-                }else{
-                    header("Location: mt.php");
-                }
-                die();
             
-
-                redirect_to("dashboard.php");
-                die();
+               
+                
             }
           
         }        
         
 
     set_alert('error',"Invalid Email or Password");
-    redirect_to("login.php");
-    die();
+    redirect_to("dashboard.php");
+ 
 
 }
