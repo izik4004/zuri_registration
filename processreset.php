@@ -17,7 +17,7 @@ $password = $_POST['password'] != "" ? $_POST['password'] :  $errorCount++;
 
 
 $_SESSION['email'] = $email;
-
+// getting errors
 if($errorCount > 0){
 
     $session_error = "You have " . $errorCount . " error";

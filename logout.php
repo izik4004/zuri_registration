@@ -2,5 +2,5 @@
 
 session_unset();
 session_destroy();
-
+//login redirect
 header("Location:login.php");

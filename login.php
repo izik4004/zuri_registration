@@ -13,7 +13,9 @@ if(isset($_SESSION['loggedIn']) && !empty($_SESSION['loggedIn'])){
         <p>
         <?php print_alert(); ?>
         </p>
-        <form method="POST" action="processlogin.php">
+
+<!---registration form ---->
+         <form method="POST" action="processlogin.php">
     
                 
             <p>

@@ -13,7 +13,8 @@ if(!is_user_loggedIn() && !is_token_set()){
    
    <h3>Reset Password</h3>
    <p>Reset Password associated with your account : [email]</p> 
-   <!-- TODO: Update email above as they enter it (JS) -->
+   
+   <!----process that handles reset--->
 
    <form action="processreset.php" method="POST">
    <p>
