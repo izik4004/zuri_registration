@@ -15,7 +15,6 @@ if(isset($_SESSION['loggedIn']) && !empty($_SESSION['loggedIn'])){
         </p>
         <form method="POST" action="processlogin.php">
     
-                
             <p>
                 <label>Email</label><br />
                 <input

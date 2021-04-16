@@ -47,4 +47,3 @@ if(isset($_SESSION['loggedIn']) && !empty($_SESSION['loggedIn'])){
         </form>
     </div>
 </div>
-<?php include_once('lib/footer.php'); ?>
